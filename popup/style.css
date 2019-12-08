@@ -1,0 +1,155 @@
+*
+{
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+body 
+{
+  background: #E5E7E9;
+  font-family: Segoe UI, Arial, sans-serif;
+}
+input
+{
+	padding: 2px;
+	border: 1px solid black;
+}
+
+.container
+{ 
+	display: flex;
+	flex-direction: column;
+	width: 200px;
+	height: 100%;
+}
+
+.header, .main, .footer
+{
+	display: flex;
+	justify-content: space-around;
+	padding: 10px 0 10px;
+}
+
+.header
+{
+  flex-direction: column;
+}
+
+.header .label,.inpts
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+.header input {
+	width: 40%;
+}
+
+.main, .footer 
+{
+	border-top: 1px dotted #222;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.footer input
+{
+  width: 30%;
+}
+
+
+
+/* --------- */
+.button {
+  color: black;
+  /* border: 1px solid black; */
+  padding: 2px;
+  /* text-transform: uppercase; */
+  letter-spacing: 2px;
+  cursor: pointer;
+  font-weight: 400;
+  }
+
+/* start Переключатель */
+.switch input[type=checkbox] {display: none;}
+
+.switch label {
+	outline:none;
+	box-sizing: border-box;
+	display: block;
+	width: 50px;
+	height: 20px;
+	border:2px solid #333333;
+	cursor: pointer;
+	position: relative;
+  border-radius: 10px;
+}
+
+.switch label:after{
+	display: block;
+	content: "";
+	width: 10px;
+	height: 10px;
+	background: #333;
+  border-radius: 50%;
+	position: absolute;
+	left: 3px;
+	top: 3px;
+  transition: all 0.3s ease;
+}
+.switch input[type=checkbox]:checked + label {
+	border:2px solid #0078d7;
+	background: #0078d7;
+}
+.switch input[type=checkbox]:checked + label:after {
+	left: 33px;
+	background: #FFF;
+}
+
+/* .switch
+{
+margin-left: auto;
+}
+input[type=checkbox] 
+{
+	display: none;
+}
+
+label
+{
+	cursor: pointer;
+	width: 50px;
+	height: 25px;
+	background: grey;
+	display: block;
+	border-radius: 50px;
+	position: relative;
+}
+label:after 
+{
+	content: '';
+	position: absolute;
+	top: 5%;
+	left: 2.5%;
+	width: 45%;
+	height: 90%;
+	background: #fff;
+	border-radius: 90px;
+	transition: 0.3s;
+}
+
+input:checked + label 
+{
+	background: #629460;
+}
+input:checked + label:after 
+{
+	left: calc(100% - 2.5%);
+	transform: translateX(-100%);
+}
+label:active:after 
+{
+	width: 70%;
+} */
+/* end Переключатель */
